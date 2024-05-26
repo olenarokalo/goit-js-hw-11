@@ -7,7 +7,7 @@ export const fetchImages = (image = '') => {
     q: image,
     image_type: `photo`,
     orientation: `horizontal`,
-    safesearch: true,
+    safesearch: `true`,
   });
 
   return fetch(`${baseUrl}?${searchParams}`).then(response => {
