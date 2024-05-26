@@ -12,7 +12,7 @@ export const fetchImages = (image = '') => {
 
   return fetch(`${baseUrl}?${searchParams}`).then(response => {
     if (!response.ok) {
-      throw new Error();
+      throw new Error(response.statusText);
     }
     return response.json();
   });
