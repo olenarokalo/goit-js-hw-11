@@ -12,7 +12,7 @@ const galleryElement = document.querySelector(`.gallery-list`);
 const loader = document.querySelector(`.loader`);
 const searchForm = document.querySelector(`.form`);
 
-const lightbox = new SimpleLightbox('gallery-link', {
+const lightbox = new SimpleLightbox('.gallery-link', {
   captionsData: 'alt',
   captionDelay: 250,
 });
